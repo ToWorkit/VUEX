@@ -1,5 +1,5 @@
 // 此处和state相对应，用来传递state中的数据
-// 可以看做是计算属性做二次处理
+
 
 export default {
   // 积分
@@ -10,7 +10,7 @@ export default {
   price (state) {
     if (state.score) {
       // 处理数据并传递
-      return state.price + 9
+      return state.price
     }
   },
   // 独立区域的积分
