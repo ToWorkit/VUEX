@@ -1,6 +1,4 @@
 // 此处和state相对应，用来传递state中的数据
-
-
 export default {
   // 积分
   score (state) {
