@@ -17,7 +17,13 @@ export default {
     })
   },
   // 获取价格
-  [types.GETPRICE](state) {
+  // obj 为测试参数数据
+  [types.GETPRICE](state, obj) {
+
+    // 可以拿到参数就可以对参数做处理
+    // 测试从child传来的参数
+    console.log(obj)
+
     if (state.score) {
       let apiPrice = '/static/price.json'
       console.log(state)
@@ -33,5 +39,12 @@ export default {
         }
       })
     }
+  },
+  // 独立区域的积分
+  // 实际目的是为了演示参数的传递及处理
+  [types.OPERATESCORE](state, obj) {
+    // 积分参数
+    console.log(obj)
+    state.alone += obj
   }
 }

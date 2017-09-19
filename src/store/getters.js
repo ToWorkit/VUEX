@@ -12,5 +12,9 @@ export default {
       // 处理数据并传递
       return state.price + 9
     }
+  },
+  // 独立区域的积分
+  alone (state) {
+    return state.alone
   }
 }

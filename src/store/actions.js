@@ -10,5 +10,9 @@ export default {
   // 获取价格
   getPrice({commit, state}, obj) {
     commit(types.GETPRICE, obj)
+  },
+  // 处理独立区域的积分(实际目的是为了演示参数的传递及处理)
+  operateScore({commit, state}, obj) {
+    commit(types.OPERATESCORE, obj)
   }
 }

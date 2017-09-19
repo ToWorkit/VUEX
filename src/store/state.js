@@ -5,4 +5,6 @@ export default {
   score: 0,
   // 价格
   price: 200,
+  // 独立区域的积分
+  alone: 1
 }
